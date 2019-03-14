@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dota 2 Hero Picker | JSON Data</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="inputData">
+		Name: <input type="text" id="name"><br>
+		Primaty Attribute: <select id="primaryAttack">
+								<option value="strength">Strength</option>
+								<option value="agility">Agility</option>
+								<option value="int">Intelligence</option>
+							</select><br>
+		Attack Type: <select id="attackType">
+						<option value="melee">Melee</option>
+						<option value="range">Range</option>
+					</select><br>
+		Durable: <input type="checkbox" id="durable"><br>
+		Pusher: <input type="checkbox" id="pusher"><br>
+		Nuker: <input type="checkbox" id="nuker"><br>
+		Initiator: <input type="checkbox" id="initiator"><br>
+		Role: <div class="container">
+					<input type="checkbox" id="carry">Carry<br>
+					<input type="checkbox" id="mid">Midlane<br>
+					<input type="checkbox" id="off">Offlane<br>
+					<input type="checkbox" id="roam">Roaming<br>
+					<input type="checkbox" id="sup">Support<br>
+			</div><br>
+		<div id="imgDiv">
+			Image URL: <input type="text" id="imgURL">
+			<img alt="Hero Image">
+		</div><br>
+	<button id="addHero">Add hero</button>
+	</div>
+	<div id="outputData">
+		
+	</div>
+	<button id="copy" onclick="copyToClipboard('#outputData')">Copy</button>
+	<script src="./data.js"></script>
+</body>
+</html>

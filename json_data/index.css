@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#inputData {
+	margin-top: 10px;
+	box-sizing: border-box;
+	position: relative;
+	padding: 10px;
+	left: 25%;
+	display: block;
+	width: 500px;
+	border: black 1px solid;
+	margin-bottom: 20px;
+}
+
+input, select {
+	margin: 10px;
+}
+
+.container {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+	border: black 1px solid;
+}
+
+#addHero {
+	margin-top: 10px;
+	width: 100%;
+	height: 60px;
+}
+
+#copy {
+	display: flex;
+	width: 80%;
+	margin: auto auto;
+	height: 30px;
+	text-align: center;
+	justify-content: center;
+}
